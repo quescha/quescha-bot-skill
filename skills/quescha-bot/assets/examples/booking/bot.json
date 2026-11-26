@@ -1,0 +1,150 @@
+{
+  "groupnull": false,
+  "groups": [
+    {
+      "id": 100001,
+      "name": "Синтетический бот записи в салон",
+      "ordernumber": 1
+    }
+  ],
+  "chains": [
+    {
+      "id": 100101,
+      "code": "100000000000101",
+      "name": "Запись в салон",
+      "ordernumber": 1,
+      "BotGroupId": 100001,
+      "channel": "[]",
+      "active": true,
+      "sended": 0,
+      "planned": 0,
+      "canceled": 0,
+      "addtagstart": "null",
+      "deltagstart": "null",
+      "addtagstop": "null",
+      "deltagstop": "null",
+      "keywords": "[\"меню\",\"запись\",\"салон\",\"старт\"]",
+      "dialog": false,
+      "nothandled": false,
+      "subscription": true,
+      "rangetime": false,
+      "rangedays": "[\"пн\",\"вт\",\"ср\",\"чт\",\"пт\",\"сб\",\"вс\"]",
+      "rangetimestart": 0,
+      "rtshour": "00",
+      "rtsminute": "00",
+      "rangetimeend": 0,
+      "rtehour": "00",
+      "rteminute": "00",
+      "additional": null,
+      "webhook": null,
+      "email": "[]",
+      "hidden": false,
+      "messenger": "[]"
+    }
+  ],
+  "messages": [
+    {
+      "id": 100201,
+      "ordernumber": 0,
+      "message": "[{\"id\":\"start000\",\"x\":0,\"y\":0,\"order\":0,\"name\":\"Главное меню\",\"text\":\"Здравствуйте! Это #{g_Название салона}. Выберите действие.\",\"media\":[],\"btn\":[{\"id\":0,\"name\":\"Записаться\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Выбор услуги\",\"value\":\"service0\"},\"nextData\":\"\",\"data\":\"book\",\"intentBtn\":null},{\"id\":1,\"name\":\"Мои записи\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Мои записи\",\"value\":\"mylist00\"},\"nextData\":\"\",\"data\":\"mine\",\"intentBtn\":null}],\"number\":false,\"regex\":false,\"regexval\":\"\",\"email\":false,\"phone\":false,\"getdata\":false,\"getdataurl\":null,\"externalbefore\":null,\"acceptpayment\":false,\"dontwaitanswer\":false,\"answervar\":\"\",\"fileid\":\"\",\"fileidnote\":false,\"waitinterval\":\"\",\"waitunit\":null,\"ticklim\":\"\",\"wronganswer\":null,\"conditionlist\":[{\"nextmessage\":null,\"getdata\":false,\"getdataurl\":null,\"externalafter\":null,\"exitwait\":false,\"exitatonce\":false,\"webhookcheck\":false,\"webhook\":null,\"emailcheck\":false,\"email\":null,\"messengercheck\":false,\"messenger\":null,\"addtagcheck\":false,\"addtag\":[],\"deltagcheck\":false,\"deltag\":[],\"tagdata\":\"\",\"cond\":\"\",\"metrika\":false,\"metrikaid\":[],\"metrikaname\":null,\"metrikacounter\":\"\"}],\"messengercheck\":false},{\"id\":\"service0\",\"x\":340,\"y\":0,\"order\":1,\"name\":\"Выбор услуги\",\"text\":\"Выберите услугу.\",\"media\":[],\"btn\":[{\"id\":0,\"name\":\"Стрижка\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Имя клиента\",\"value\":\"name0000\"},\"nextData\":\"\",\"data\":\"cut\",\"intentBtn\":null},{\"id\":1,\"name\":\"Окрашивание\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Имя клиента\",\"value\":\"name0000\"},\"nextData\":\"\",\"data\":\"color\",\"intentBtn\":null},{\"id\":2,\"name\":\"Маникюр\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Имя клиента\",\"value\":\"name0000\"},\"nextData\":\"\",\"data\":\"nails\",\"intentBtn\":null},{\"id\":3,\"name\":\"В меню\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Главное меню\",\"value\":\"start000\"},\"nextData\":\"\",\"data\":\"menu\",\"intentBtn\":null}],\"number\":false,\"regex\":false,\"regexval\":\"\",\"email\":false,\"phone\":false,\"getdata\":false,\"getdataurl\":null,\"externalbefore\":null,\"acceptpayment\":false,\"dontwaitanswer\":false,\"answervar\":\"услуга\",\"fileid\":\"\",\"fileidnote\":false,\"waitinterval\":\"\",\"waitunit\":null,\"ticklim\":\"\",\"wronganswer\":null,\"conditionlist\":[{\"nextmessage\":{\"label\":\"Имя клиента\",\"value\":\"name0000\"},\"getdata\":false,\"getdataurl\":null,\"externalafter\":null,\"exitwait\":false,\"exitatonce\":false,\"webhookcheck\":false,\"webhook\":null,\"emailcheck\":false,\"email\":null,\"messengercheck\":false,\"messenger\":null,\"addtagcheck\":false,\"addtag\":[],\"deltagcheck\":false,\"deltag\":[],\"tagdata\":\"\",\"cond\":\"\",\"metrika\":false,\"metrikaid\":[],\"metrikaname\":null,\"metrikacounter\":\"\"}],\"messengercheck\":false},{\"id\":\"name0000\",\"x\":680,\"y\":0,\"order\":2,\"name\":\"Имя клиента\",\"text\":\"Введите ваше имя.\",\"media\":[],\"btn\":[{\"id\":0,\"name\":\"Отмена\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Главное меню\",\"value\":\"start000\"},\"nextData\":\"\",\"data\":\"cancel\",\"intentBtn\":null}],\"number\":false,\"regex\":false,\"regexval\":\"\",\"email\":false,\"phone\":false,\"getdata\":false,\"getdataurl\":null,\"externalbefore\":null,\"acceptpayment\":false,\"dontwaitanswer\":false,\"answervar\":\"имя\",\"fileid\":\"\",\"fileidnote\":false,\"waitinterval\":\"\",\"waitunit\":null,\"ticklim\":\"\",\"wronganswer\":null,\"conditionlist\":[{\"nextmessage\":{\"label\":\"Телефон клиента\",\"value\":\"phone000\"},\"getdata\":false,\"getdataurl\":null,\"externalafter\":null,\"exitwait\":false,\"exitatonce\":false,\"webhookcheck\":false,\"webhook\":null,\"emailcheck\":false,\"email\":null,\"messengercheck\":false,\"messenger\":null,\"addtagcheck\":false,\"addtag\":[],\"deltagcheck\":false,\"deltag\":[],\"tagdata\":\"\",\"cond\":\"\",\"metrika\":false,\"metrikaid\":[],\"metrikaname\":null,\"metrikacounter\":\"\"}],\"messengercheck\":false,\"btnsettings\":{\"tg\":{\"inrow\":[],\"inline\":true,\"clearkeyboard\":false,\"contact\":false,\"contacttext\":\"Отправить номер телефона\",\"location\":false,\"locationtext\":\"Отправить свое месторасположение\",\"venue\":false,\"venuetext\":\"Отправить точку на карте\",\"replace\":false,\"disablepreview\":false,\"disablenotification\":false,\"protectcontent\":false,\"mediabulk\":false}}},{\"id\":\"phone000\",\"x\":1020,\"y\":0,\"order\":3,\"name\":\"Телефон клиента\",\"text\":\"Введите номер телефона.\",\"media\":[],\"btn\":[],\"number\":false,\"regex\":false,\"regexval\":\"\",\"email\":false,\"phone\":true,\"getdata\":false,\"getdataurl\":null,\"externalbefore\":null,\"acceptpayment\":false,\"dontwaitanswer\":false,\"answervar\":\"телефон\",\"fileid\":\"\",\"fileidnote\":false,\"waitinterval\":\"\",\"waitunit\":null,\"ticklim\":\"\",\"wronganswer\":{\"label\":\"Телефон клиента\",\"value\":\"phone000\"},\"conditionlist\":[{\"nextmessage\":{\"label\":\"Дата записи\",\"value\":\"date0000\"},\"getdata\":false,\"getdataurl\":null,\"externalafter\":null,\"exitwait\":false,\"exitatonce\":false,\"webhookcheck\":false,\"webhook\":null,\"emailcheck\":false,\"email\":null,\"messengercheck\":false,\"messenger\":null,\"addtagcheck\":false,\"addtag\":[],\"deltagcheck\":false,\"deltag\":[],\"tagdata\":\"\",\"cond\":\"\",\"metrika\":false,\"metrikaid\":[],\"metrikaname\":null,\"metrikacounter\":\"\"}],\"messengercheck\":false,\"btnsettings\":{\"tg\":{\"inrow\":[],\"inline\":false,\"clearkeyboard\":false,\"contact\":true,\"contacttext\":\"Отправить номер телефона\",\"location\":false,\"locationtext\":\"Отправить свое месторасположение\",\"venue\":false,\"venuetext\":\"Отправить точку на карте\",\"replace\":false,\"disablepreview\":false,\"disablenotification\":false,\"protectcontent\":false,\"mediabulk\":false},\"max\":{\"contact\":true,\"contacttext\":\"Отправить номер телефона\"}}},{\"id\":\"date0000\",\"x\":1360,\"y\":0,\"order\":4,\"name\":\"Дата записи\",\"text\":\"Укажите желаемую дату и время записи, например: 20.12.2026 в 15:30.\",\"media\":[],\"btn\":[{\"id\":0,\"name\":\"Отмена\",\"url\":\"\",\"action\":\"nextmessage\",\"addtag\":null,\"deltag\":null,\"nextMessage\":{\"label\":\"Главное меню\",\"value\":\"start000\"},\"nextData\":\"\",\"data\":\"cancel\",\"intentBtn\":null}],\"number\":false,\"regex\":false,\"regexval\":\"\",\"email\":false,\"phone\":false,\"getdata\":false,\"getdataurl\":null,\"externalbefore\":null,\"acceptpayment\":false,\"dontwaitanswer\":false,\"answervar\":\"дата\",\"fileid\":\"\",\"fileidnote\":false,\"waitinterval\":\"\",\"waitunit\":null,\"ticklim\":\"\",\"wronganswer\":null,\"conditionlist\":[{\"nextmessage\":{\"label\":\"Сохранение записи\",\"value\":\"save0000\"},\"getdata\":false,\"getdataurl\":null,\"externalafter\":null,\"exitwait\":false,\"exitatonce\":false,\"webhookcheck\":false,\"webhook\":null,\"emailcheck\":false,\"email\":null,\"messengercheck\":false,\"messenger\":null,\"addtagcheck\":false,\"addtag\":[],\"deltagcheck\":false,\"deltag\":[],\"tagdata\":\"\",\"cond\":\"\",\"metrika\":false,\"metrikaid\":[],\"metrikaname\":null,\"metrikacounter\":\"\"}],\"messengercheck\":false,\"btnsettings\":{\"tg\":{\"inrow\":[],\"inline\":true,\"clearkeyboard\":true,\"contact\":false,\"contacttext\":\"Отправить номер телефона\",\"location\":false,\"locationtext\":\"Отправить свое месторасположение\",\"venue\":false,\"venuetext\":\"Отправить точку на карте\",\"replace\":false,\"disablepreview\":false,\"disablenotification\":false,\"protectcontent\":false,\"mediabulk\":false}}},{\"id\":\"save0000\",\"x\":1700,\"y\":0,\"order\":5,\"name\":\"Сохранение записи\",\"text\":\"[Actions]\",\"media\":[],\"btn\":[],\"number\":false,\"regex\":false,\"regexval\":\"\",\"email\":false,\"phone\":false,\"getdata\":false,\"getdataurl\":null,\"externalbefore\":{\"label\":\"Создать запись\",\"value\":150001},\"acceptpayment\":false,\"dontwaitanswer\":false,\"answervar\":\"\",\"fileid\":\"\",\"fileidnote\":false,\"waitinterval\":\"\",\"waitunit\":null,\"ticklim\":\"\",\"wronganswer\":null,\"conditionlist\":[{\"nextmessage\":null,\"getdata\":false,\"getdataurl\":null,\"externalafter\":null,\"exitwait\":false,\"exitatonce\":false,\"webhookcheck\":false,\"webhook\":null,\"emailcheck\":false,\"email\":null,\"messengercheck\":false,\"messenger\":null,\"addtagcheck\":false,\"addtag\":[],\"deltagcheck\":false,\"deltag\":[],\"tagdata\":\"\",\"cond\":\"\",\"metrika\":false,\"metrikaid\":[],\"metrikaname\":null,\"metrikacounter\":\"\"}],\"messengercheck\":false},{\"id\":\"mylist00\",\"x\":340,\"y\":320,\"order\":6,\"name\":\"Мои записи\",\"text\":\"[Actions]\",\"media\":[],\"btn\":[],\"number\":false,\"regex\":false,\"regexval\":\"\",\"email\":false,\"phone\":false,\"getdata\":false,\"getdataurl\":null,\"externalbefore\":{\"label\":\"Мои записи\",\"value\":150002},\"acceptpayment\":false,\"dontwaitanswer\":false,\"answervar\":\"\",\"fileid\":\"\",\"fileidnote\":false,\"waitinterval\":\"\",\"waitunit\":null,\"ticklim\":\"\",\"wronganswer\":null,\"conditionlist\":[{\"nextmessage\":null,\"getdata\":false,\"getdataurl\":null,\"externalafter\":null,\"exitwait\":false,\"exitatonce\":false,\"webhookcheck\":false,\"webhook\":null,\"emailcheck\":false,\"email\":null,\"messengercheck\":false,\"messenger\":null,\"addtagcheck\":false,\"addtag\":[],\"deltagcheck\":false,\"deltag\":[],\"tagdata\":\"\",\"cond\":\"\",\"metrika\":false,\"metrikaid\":[],\"metrikaname\":null,\"metrikacounter\":\"\"}],\"messengercheck\":false}]",
+      "acode": "quescha_skill_booking_demo",
+      "interval": "0",
+      "intervalnum": 1,
+      "dimension": "now",
+      "dimensionlabel": "сразу",
+      "intfromstart": 0,
+      "anytime": true,
+      "exacttime": 0,
+      "exacttimehour": "00",
+      "exacttimeminute": "00",
+      "code": "100000000000201",
+      "name": "Сценарий записи",
+      "sended": 0,
+      "planned": 0,
+      "active": true,
+      "chatmessage": false,
+      "singlechat": false,
+      "scenario": true,
+      "scenariotype": "common",
+      "exit": "выход",
+      "exitanswer": null,
+      "stepback": "назад",
+      "actionseveryone": null,
+      "BotChainId": 100101
+    }
+  ],
+  "schedules": [],
+  "scheduleschains": [],
+  "schedulesmessages": [],
+  "shops": [],
+  "shopschains": [],
+  "shopsmessages": [],
+  "landings": [],
+  "lists": [
+    {
+      "id": 110001,
+      "name": "Услуги",
+      "headers": "[\"Код\",\"Название\",\"Цена\",\"Активна\",\"ClientID\",\"Messenger\",\"BotID\",\"CreationDate\"]",
+      "ordernumber": 0,
+      "BotGroupId": 100001
+    },
+    {
+      "id": 110002,
+      "name": "Записи",
+      "headers": "[\"Номер\",\"Услуга\",\"Цена\",\"Имя\",\"Телефон\",\"Дата\",\"Статус\",\"ClientID\",\"Messenger\",\"BotID\",\"CreationDate\"]",
+      "ordernumber": 1,
+      "BotGroupId": 100001
+    }
+  ],
+  "listdata": [
+    {
+      "id": 120001,
+      "ListId": 110001,
+      "data": "[\"cut\",\"Стрижка\",\"1500\",\"да\",\"\",\"\",\"\",\"\"]",
+      "ordernumber": 0
+    },
+    {
+      "id": 120002,
+      "ListId": 110001,
+      "data": "[\"color\",\"Окрашивание\",\"4500\",\"да\",\"\",\"\",\"\",\"\"]",
+      "ordernumber": 1
+    },
+    {
+      "id": 120003,
+      "ListId": 110001,
+      "data": "[\"nails\",\"Маникюр\",\"2200\",\"да\",\"\",\"\",\"\",\"\"]",
+      "ordernumber": 2
+    }
+  ],
+  "global": [
+    {
+      "id": 130001,
+      "name": "Название салона",
+      "note": "Публичное название в сообщениях бота",
+      "value": "Демонстрационный салон",
+      "ordernumber": 0,
+      "BotGroupId": 100001
+    }
+  ],
+  "external": [
+    {
+      "id": 150001,
+      "name": "Создать запись",
+      "ordernumber": 0,
+      "actions": "[]",
+      "BotGroupId": 100001,
+      "CrmId": null
+    },
+    {
+      "id": 150002,
+      "name": "Мои записи",
+      "ordernumber": 1,
+      "actions": "[]",
+      "BotGroupId": 100001,
+      "CrmId": null
+    }
+  ],
+  "webapp": [],
+  "webapprubric": [],
+  "webappdata": []
+}

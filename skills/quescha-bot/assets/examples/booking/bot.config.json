@@ -1,0 +1,8 @@
+{
+  "name": "Синтетический бот записи в салон",
+  "slug": "booking-demo",
+  "source": "bot.json",
+  "tests": "tests.js",
+  "mutations": "mutations.js",
+  "dryrun": "dryrun.js"
+}

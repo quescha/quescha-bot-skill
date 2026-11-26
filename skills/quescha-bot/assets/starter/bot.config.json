@@ -1,0 +1,7 @@
+{
+  "name": "Бот-визитка кофейни",
+  "slug": "coffee-guide",
+  "source": "bot.json",
+  "tests": "tests.js",
+  "mutations": "mutations.js"
+}

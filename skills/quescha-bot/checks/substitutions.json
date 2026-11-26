@@ -1,0 +1,43 @@
+{
+  "names": [
+    "ALast",
+    "ALastID",
+    "AddDate",
+    "AddMinutes",
+    "AnswerID",
+    "DaysBetween",
+    "DiffDates",
+    "DiffMinutes",
+    "Files",
+    "GeneratePhone",
+    "Random",
+    "Round",
+    "SendContact",
+    "SendLocation",
+    "SendVenue",
+    "Sticker",
+    "StrLen",
+    "SumInWords",
+    "WeekDay"
+  ],
+  "shapes": {
+    "ALastID": "\\[ALastID\\((.+?)\\)\\]",
+    "ALast": "\\[ALast\\((.+?)\\)\\]",
+    "AnswerID": "\\[AnswerID\\((.+?)\\)\\]",
+    "Random": "\\[Random\\((.+?),(.+?)\\)\\]",
+    "DaysBetween": "\\[DaysBetween\\((.+?),(.+?)\\)\\]",
+    "Round": "\\[Round\\((.+?)\\)\\]",
+    "SumInWords": "\\[SumInWords\\((.+?),(.+?),(.+?)\\)\\]",
+    "AddDate": "\\[AddDate\\((.+?),([-\\d\\s]+?)\\)\\]",
+    "AddMinutes": "\\[AddMinutes\\((.+?),([-\\d\\s]+?)\\)\\]",
+    "WeekDay": "\\[WeekDay\\((.+?)\\)\\]",
+    "DiffDates": "\\[DiffDates\\((.+?),(.+?)\\)\\]",
+    "DiffMinutes": "\\[DiffMinutes\\((.+?),(.+?)\\)\\]",
+    "StrLen": "\\[StrLen\\((.+?)\\)\\]",
+    "GeneratePhone": "\\[GeneratePhone\\((.+?)\\)\\]",
+    "SendContact": "\\[SendContact\\((.*?),(.*?),(.*?)\\)\\]",
+    "SendLocation": "\\[SendLocation\\((.*?),(.*?)\\)\\]",
+    "SendVenue": "\\[SendVenue\\((.*?),(.*?),(.*?),(.*?)\\)\\]",
+    "Files": "\\[Files\\((.*?)\\)\\]"
+  }
+}

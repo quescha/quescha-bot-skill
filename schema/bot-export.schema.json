@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/quescha/quescha-bot-skill/main/schema/bot-export.schema.json",
+  "title": "Quescha bot export",
+  "type": "object",
+  "required": [
+    "groupnull", "groups", "chains", "messages", "schedules", "scheduleschains",
+    "schedulesmessages", "shops", "shopschains", "shopsmessages", "landings",
+    "lists", "listdata", "global", "external", "webapp", "webapprubric", "webappdata"
+  ],
+  "properties": {
+    "groupnull": { "type": "boolean" },
+    "groups": { "type": "array", "items": { "$ref": "#/$defs/group" } },
+    "chains": { "type": "array", "items": { "$ref": "#/$defs/chain" } },
+    "messages": { "type": "array", "items": { "$ref": "#/$defs/message" } },
+    "schedules": { "type": "array" },
+    "scheduleschains": { "type": "array" },
+    "schedulesmessages": { "type": "array" },
+    "shops": { "type": "array" },
+    "shopschains": { "type": "array" },
+    "shopsmessages": { "type": "array" },
+    "landings": { "type": "array" },
+    "lists": { "type": "array", "items": { "$ref": "#/$defs/list" } },
+    "listdata": { "type": "array", "items": { "$ref": "#/$defs/listdata" } },
+    "global": { "type": "array", "items": { "$ref": "#/$defs/global" } },
+    "external": { "type": "array", "items": { "$ref": "#/$defs/external" } },
+    "webapp": { "type": "array", "items": { "$ref": "#/$defs/webapp" } },
+    "webapprubric": { "type": "array", "items": { "$ref": "#/$defs/webapprubric" } },
+    "webappdata": { "type": "array", "items": { "$ref": "#/$defs/webappdata" } }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "id": { "type": "integer", "minimum": 1 },
+    "group": {
+      "type": "object",
+      "required": ["id", "name", "ordernumber"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "name": { "type": "string", "minLength": 1 }, "ordernumber": { "type": "number" } }
+    },
+    "chain": {
+      "type": "object",
+      "required": ["id", "code", "name", "ordernumber", "BotGroupId", "channel", "subscription", "dialog", "keywords"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "code": { "type": "string" }, "name": { "type": "string", "minLength": 1 },
+        "BotGroupId": { "$ref": "#/$defs/id" }, "channel": { "type": "string" }, "keywords": { "type": ["string", "null"] },
+        "subscription": { "type": "boolean" }, "dialog": { "type": "boolean" }, "nothandled": { "type": "boolean" }
+      }
+    },
+    "message": {
+      "type": "object",
+      "required": ["id", "ordernumber", "message", "code", "scenario", "scenariotype", "BotChainId"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "message": { "type": "string", "contentMediaType": "application/json" },
+        "code": { "type": "string" }, "scenario": { "type": "boolean" }, "scenariotype": { "type": "string" },
+        "BotChainId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "list": {
+      "type": "object",
+      "required": ["id", "name", "headers", "ordernumber", "count", "BotGroupId"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "type": "string", "minLength": 1 },
+        "headers": { "type": "string", "contentMediaType": "application/json" }, "BotGroupId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "listdata": {
+      "type": "object",
+      "required": ["id", "data", "ListId"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "data": { "type": "string", "contentMediaType": "application/json" }, "ListId": { "$ref": "#/$defs/id" } }
+    },
+    "global": {
+      "type": "object",
+      "required": ["id", "name", "note", "value", "ordernumber", "BotGroupId"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "name": { "type": "string", "minLength": 1 }, "value": {}, "note": { "type": ["string", "null"] }, "BotGroupId": { "$ref": "#/$defs/id" } }
+    },
+    "external": {
+      "type": "object",
+      "required": ["id", "name", "ordernumber", "actions", "BotGroupId", "CrmId"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "type": "string", "minLength": 1 },
+        "actions": { "type": "string", "contentMediaType": "application/json" }, "BotGroupId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "webapp": {
+      "type": "object",
+      "required": ["id", "name", "urlid", "type", "settings", "data", "ordernumber", "BotGroupId"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "type": "string" }, "urlid": { "type": "string" },
+        "type": { "enum": ["cat", "cal", "own", "miniapp"] }, "settings": { "type": ["string", "null"] }, "BotGroupId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "webapprubric": {
+      "type": "object",
+      "required": ["id", "name", "ordernumber", "WebAppId"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "WebAppId": { "$ref": "#/$defs/id" } }
+    },
+    "webappdata": {
+      "type": "object",
+      "required": ["id", "title", "data", "ordernumber", "WebAppId", "WebAppRubricId"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "WebAppId": { "$ref": "#/$defs/id" }, "WebAppRubricId": { "type": ["integer", "null"] } }
+    }
+  }
+}

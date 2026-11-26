@@ -1,0 +1,776 @@
+{
+  "action": [
+    {
+      "label": "Операции с данными (Переменные, Списки)",
+      "value": "data"
+    },
+    {
+      "label": "Обмен данными (HTTP-запросы)",
+      "value": "getdata"
+    },
+    {
+      "label": "JS код",
+      "value": "jscode"
+    },
+    {
+      "label": "Платежи",
+      "value": "payment"
+    },
+    {
+      "label": "Нейросеть",
+      "value": "chatgpt"
+    },
+    {
+      "label": "WebApp/MiniApp",
+      "value": "webapp"
+    },
+    {
+      "label": "Реферальная система в Telegram/MAX",
+      "value": "referal"
+    },
+    {
+      "label": "Прием и пересылка медиа",
+      "value": "sendmedia"
+    },
+    {
+      "label": "Google Таблицы",
+      "value": "gsheets"
+    },
+    {
+      "label": "CRM",
+      "value": "crm"
+    },
+    {
+      "label": "Google Календарь",
+      "value": "gcalendar"
+    },
+    {
+      "label": "Google Диск",
+      "value": "gdrive"
+    },
+    {
+      "label": "Яндекс Диск",
+      "value": "yadisk"
+    },
+    {
+      "label": "Ссылки",
+      "value": "links"
+    },
+    {
+      "label": "Генерация документа из шаблона",
+      "value": "createdoc"
+    },
+    {
+      "label": "Работа с группами и каналами в Telegram",
+      "value": "tgchannel"
+    },
+    {
+      "label": "Работа с группами и каналами в МАКС",
+      "value": "maxchannel"
+    },
+    {
+      "label": "Проверка тегов",
+      "value": "checktags"
+    }
+  ],
+  "optype": [
+    {
+      "label": "Переменная",
+      "value": "vars"
+    },
+    {
+      "label": "Список",
+      "value": "list"
+    },
+    {
+      "label": "Глобальная переменная",
+      "value": "globalvars"
+    },
+    {
+      "label": "Данные из сценария ([DataN])",
+      "value": "data"
+    },
+    {
+      "label": "Ответ",
+      "value": "answers"
+    }
+  ],
+  "validation": [
+    {
+      "label": "Число",
+      "value": "number"
+    },
+    {
+      "label": "Телефон",
+      "value": "phone"
+    },
+    {
+      "label": "Эл. почта",
+      "value": "email"
+    },
+    {
+      "label": "Регулярное выражение",
+      "value": "regex"
+    },
+    {
+      "label": "Выражение",
+      "value": "expression"
+    }
+  ],
+  "orand": [
+    {
+      "label": "И",
+      "value": "and"
+    },
+    {
+      "label": "ИЛИ",
+      "value": "or"
+    }
+  ],
+  "savetarget": [
+    {
+      "label": "Переменная",
+      "value": "var"
+    },
+    {
+      "label": "Список",
+      "value": "list"
+    },
+    {
+      "label": "Глобальная переменная",
+      "value": "globalvar"
+    }
+  ],
+  "listaction": [
+    {
+      "label": "Добавить новую запись",
+      "value": "addrow"
+    },
+    {
+      "label": "Изменить запись",
+      "value": "editrow"
+    },
+    {
+      "label": "Удалить запись",
+      "value": "delrow"
+    }
+  ],
+  "cellaction": [
+    {
+      "label": "Установить значение",
+      "value": "set"
+    },
+    {
+      "label": "Добавить значение",
+      "value": "add"
+    },
+    {
+      "label": "Удалить значение",
+      "value": "del"
+    }
+  ],
+  "comparision": [
+    {
+      "label": "Равно",
+      "value": "="
+    },
+    {
+      "label": "Не равно",
+      "value": "!="
+    },
+    {
+      "label": "Содержит",
+      "value": "include"
+    },
+    {
+      "label": "Не содержит",
+      "value": "notinclude"
+    },
+    {
+      "label": "Больше",
+      "value": ">"
+    },
+    {
+      "label": "Больше, либо равно",
+      "value": ">="
+    },
+    {
+      "label": "Меньше",
+      "value": "<"
+    },
+    {
+      "label": "Меньше, либо равно",
+      "value": "<="
+    }
+  ],
+  "oplistaction": [
+    {
+      "label": "Чтение записей",
+      "value": "readrow"
+    },
+    {
+      "label": "Добавить новую запись",
+      "value": "addrow"
+    },
+    {
+      "label": "Изменить запись",
+      "value": "editrow"
+    },
+    {
+      "label": "Удалить запись",
+      "value": "delrow"
+    }
+  ],
+  "iterate": [
+    {
+      "label": "Сохранить в переменную",
+      "value": "saveinvar"
+    },
+    {
+      "label": "Сформировать строку",
+      "value": "getstring"
+    },
+    {
+      "label": "Сохранить в глобальную переменную",
+      "value": "saveinglobal"
+    },
+    {
+      "label": "Добавить в список",
+      "value": "addtolist"
+    },
+    {
+      "label": "Изменить список",
+      "value": "editlist"
+    }
+  ],
+  "getstring": [
+    {
+      "label": "Поле",
+      "value": "pole"
+    },
+    {
+      "label": "Произвольная строка",
+      "value": "string"
+    }
+  ],
+  "sort": [
+    {
+      "label": "По возрастанию",
+      "value": true
+    },
+    {
+      "label": "По убыванию",
+      "value": false
+    },
+    {
+      "label": "Случайное",
+      "value": "random"
+    }
+  ],
+  "crmtype": [
+    {
+      "label": "Принять из CRM",
+      "value": "recieve"
+    },
+    {
+      "label": "Отправить в CRM",
+      "value": "send"
+    }
+  ],
+  "payment": [
+    {
+      "label": "Сформировать платежную ссылку",
+      "value": "getlink"
+    },
+    {
+      "label": "Принять платеж",
+      "value": "acceptpay"
+    },
+    {
+      "label": "Счёт в звёздах Telegram",
+      "value": "starinvoice"
+    },
+    {
+      "label": "Возврат звёзд",
+      "value": "starrefund"
+    }
+  ],
+  "media": [
+    {
+      "label": "Файл",
+      "value": "file"
+    },
+    {
+      "label": "Изображение",
+      "value": "image"
+    },
+    {
+      "label": "Аудио",
+      "value": "audio"
+    },
+    {
+      "label": "Видео",
+      "value": "video"
+    }
+  ],
+  "getdata": [
+    {
+      "label": "Ожидание данных",
+      "value": "waiting"
+    },
+    {
+      "label": "Отправить запрос",
+      "value": "get"
+    }
+  ],
+  "method": [
+    {
+      "label": "GET",
+      "value": "get"
+    },
+    {
+      "label": "POST-json",
+      "value": "post-json"
+    },
+    {
+      "label": "POST-data",
+      "value": "post-data"
+    },
+    {
+      "label": "PUT-json",
+      "value": "put-json"
+    },
+    {
+      "label": "PUT-data",
+      "value": "put-data"
+    },
+    {
+      "label": "PATCH-json",
+      "value": "patch-json"
+    },
+    {
+      "label": "PATCH-data",
+      "value": "patch-data"
+    },
+    {
+      "label": "DELETE-json",
+      "value": "delete-json"
+    },
+    {
+      "label": "DELETE-data",
+      "value": "delete-data"
+    }
+  ],
+  "payloads": [
+    {
+      "label": "JSON",
+      "value": "json"
+    },
+    {
+      "label": "DATA",
+      "value": "data"
+    }
+  ],
+  "gsheets": [
+    {
+      "label": "Найти",
+      "value": "find"
+    },
+    {
+      "label": "Добавить",
+      "value": "add"
+    },
+    {
+      "label": "Изменить",
+      "value": "edit"
+    }
+  ],
+  "links": [
+    {
+      "label": "Принять ссылку",
+      "value": "acceptlink"
+    },
+    {
+      "label": "Создать ссылку",
+      "value": "getlink"
+    }
+  ],
+  "linksvisible": [
+    {
+      "label": "Общая",
+      "value": "common"
+    },
+    {
+      "label": "Индивидуальная",
+      "value": "private"
+    }
+  ],
+  "webapp": [
+    {
+      "label": "Каталог: обработка заказа",
+      "value": "cat_order"
+    },
+    {
+      "label": "Календарь: данные из приложения",
+      "value": "cal_data"
+    },
+    {
+      "label": "Календарь: сделать запись",
+      "value": "cal_record"
+    },
+    {
+      "label": "Календарь: получить все записи клиента",
+      "value": "cal_get_records"
+    },
+    {
+      "label": "Календарь: получить запись клиента",
+      "value": "cal_get_record"
+    },
+    {
+      "label": "Календарь: удалить запись клиента",
+      "value": "cal_del_record"
+    },
+    {
+      "label": "Календарь: удалить все записи клиента",
+      "value": "cal_delall_records"
+    }
+  ],
+  "gcalendar": [
+    {
+      "label": "Событие: получить",
+      "value": "eventget"
+    },
+    {
+      "label": "Событие: добавить",
+      "value": "eventinsert"
+    },
+    {
+      "label": "Событие: удалить",
+      "value": "eventdelete"
+    },
+    {
+      "label": "Событие: изменить",
+      "value": "eventupdate"
+    },
+    {
+      "label": "Событие: получить список",
+      "value": "eventlist"
+    },
+    {
+      "label": "Событие: перенести в другой календарь",
+      "value": "eventmove"
+    },
+    {
+      "label": "Событие: настройка уведомлений",
+      "value": "eventwebhook"
+    },
+    {
+      "label": "Событие: обновление уведомлений",
+      "value": "eventwebhookrenew"
+    },
+    {
+      "label": "Событие: синхронизация",
+      "value": "eventwebhooksync"
+    },
+    {
+      "label": "Проверка занятости",
+      "value": "freebusy"
+    },
+    {
+      "label": "Календарь: получить",
+      "value": "calget"
+    },
+    {
+      "label": "Календарь: добавить",
+      "value": "calinsert"
+    },
+    {
+      "label": "Календарь: удалить",
+      "value": "caldelete"
+    },
+    {
+      "label": "Календарь: изменить",
+      "value": "calupdate"
+    },
+    {
+      "label": "Списки: получить все",
+      "value": "listlist"
+    }
+  ],
+  "gdrive": [
+    {
+      "label": "Загрузить файл",
+      "value": "create"
+    },
+    {
+      "label": "Удалить файл",
+      "value": "delete"
+    }
+  ],
+  "yadisk": [
+    {
+      "label": "Загрузить файл",
+      "value": "create"
+    },
+    {
+      "label": "Удалить файл",
+      "value": "delete"
+    }
+  ],
+  "referal": [
+    {
+      "label": "Получить реферальную ссылку",
+      "value": "get"
+    },
+    {
+      "label": "Добавить/Отнять баллы",
+      "value": "add"
+    },
+    {
+      "label": "Добавить/Отнять баллы по уровням",
+      "value": "addref"
+    },
+    {
+      "label": "Произвести выплату",
+      "value": "pay"
+    },
+    {
+      "label": "Произвести выплаты по уровням",
+      "value": "payref"
+    },
+    {
+      "label": "Получить количество рефералов",
+      "value": "count"
+    },
+    {
+      "label": "Получить общий баланс рефералов",
+      "value": "getbalancereferral"
+    },
+    {
+      "label": "Получить общий баланс рефереров",
+      "value": "getbalancereferer"
+    },
+    {
+      "label": "Получить общие выплаты рефералам",
+      "value": "getpaidreferral"
+    },
+    {
+      "label": "Получить общие выплаты реферерам",
+      "value": "getpaidreferer"
+    },
+    {
+      "label": "Получить данные рефералов",
+      "value": "getreferral"
+    },
+    {
+      "label": "Получить данные рефереров",
+      "value": "getreferer"
+    },
+    {
+      "label": "Получить число уровней реферальной системы",
+      "value": "getlevel"
+    }
+  ],
+  "tgchannel": [
+    {
+      "label": "Отправка сообщения в канал/группу",
+      "value": "message"
+    },
+    {
+      "label": "Оплата звездами",
+      "value": "starpayment"
+    },
+    {
+      "label": "Проверка подписки на канал/группу",
+      "value": "subscription"
+    },
+    {
+      "label": "Бан на канале/в группе",
+      "value": "ban"
+    },
+    {
+      "label": "Снятие бана на канале/в группе",
+      "value": "unban"
+    },
+    {
+      "label": "Установка ограничений пользователю",
+      "value": "restrict"
+    },
+    {
+      "label": "Установка прав пользователю",
+      "value": "promote"
+    },
+    {
+      "label": "Установка имени администратора в супергруппе",
+      "value": "customtitle"
+    },
+    {
+      "label": "Генерация пригласительной ссылки",
+      "value": "exportinvitelink"
+    },
+    {
+      "label": "Генерация пригласительной ссылки с параметрами",
+      "value": "createinvitelink"
+    },
+    {
+      "label": "Одобрить вступление",
+      "value": "approvejoin"
+    },
+    {
+      "label": "Отклонить вступление",
+      "value": "declinejoin"
+    },
+    {
+      "label": "Получить список администраторов",
+      "value": "getadministrators"
+    },
+    {
+      "label": "Получить число участников",
+      "value": "getmembercount"
+    },
+    {
+      "label": "Удаление сообщения из канала/группы",
+      "value": "mesdelete"
+    },
+    {
+      "label": "Изменение сообщения в канале/группе",
+      "value": "mesedit"
+    },
+    {
+      "label": "Закрепление сообщения",
+      "value": "pin"
+    },
+    {
+      "label": "Открепление сообщения",
+      "value": "unpin"
+    },
+    {
+      "label": "Пересылка сообщения в канал/группу",
+      "value": "forward"
+    },
+    {
+      "label": "Копирование сообщения в канал/группу",
+      "value": "copy"
+    },
+    {
+      "label": "Опрос в канале/группе",
+      "value": "poll"
+    },
+    {
+      "label": "Данные канала/группы",
+      "value": "chatinfo"
+    },
+    {
+      "label": "Отзыв пригласительной ссылки",
+      "value": "revokeinvitelink"
+    },
+    {
+      "label": "Реакция на сообщение",
+      "value": "reaction"
+    },
+    {
+      "label": "Создание темы форума",
+      "value": "topiccreate"
+    },
+    {
+      "label": "Закрытие темы форума",
+      "value": "topicclose"
+    },
+    {
+      "label": "Открытие темы форума",
+      "value": "topicreopen"
+    },
+    {
+      "label": "Удаление темы форума",
+      "value": "topicdelete"
+    },
+    {
+      "label": "Список подарков",
+      "value": "giftlist"
+    },
+    {
+      "label": "Подарок подписчику",
+      "value": "gift"
+    },
+    {
+      "label": "Ссылка на подписку за звёзды",
+      "value": "subscriptionlink"
+    }
+  ],
+  "maxchannel": [
+    {
+      "label": "Отправка сообщения в канал/группу",
+      "value": "message"
+    },
+    {
+      "label": "Проверка подписки на канал/группу",
+      "value": "subscription"
+    },
+    {
+      "label": "Удаление из канала/группы",
+      "value": "delete"
+    },
+    {
+      "label": "Добавление в канал/группу",
+      "value": "add"
+    },
+    {
+      "label": "Удаление сообщения из канала/группы",
+      "value": "mesdelete"
+    },
+    {
+      "label": "Изменение сообщения в канале/группе",
+      "value": "mesedit"
+    },
+    {
+      "label": "Закрепление сообщения",
+      "value": "pin"
+    },
+    {
+      "label": "Открепление сообщения",
+      "value": "unpin"
+    },
+    {
+      "label": "Данные канала/группы",
+      "value": "chatinfo"
+    },
+    {
+      "label": "Получить список администраторов",
+      "value": "getadministrators"
+    },
+    {
+      "label": "Комментарии к посту",
+      "value": "comments"
+    },
+    {
+      "label": "Отправка комментария к посту",
+      "value": "comment"
+    },
+    {
+      "label": "Удаление комментария",
+      "value": "commentdelete"
+    }
+  ],
+  "createdoc": [
+    {
+      "label": "Переменная",
+      "value": "variable"
+    },
+    {
+      "label": "Цикл",
+      "value": "cycle"
+    },
+    {
+      "label": "Условие",
+      "value": "cond"
+    },
+    {
+      "label": "Изображение",
+      "value": "pic"
+    },
+    {
+      "label": "Ссылка",
+      "value": "link"
+    }
+  ]
+}
