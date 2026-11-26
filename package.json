@@ -1,0 +1,29 @@
+{
+  "name": "quescha-bot-skill",
+  "version": "0.1.0",
+  "description": "Offline CLI and Agent Skill for creating Quescha bot import archives",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "files": [
+    "skills/",
+    "schema/",
+    "docs/",
+    "scripts/",
+    "test/",
+    "README.md"
+  ],
+  "bin": {
+    "quescha-bot": "skills/quescha-bot/bin/quescha-bot.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "audit": "node scripts/audit-public.js",
+    "check": "npm run audit && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.6.1"
+  }
+}
