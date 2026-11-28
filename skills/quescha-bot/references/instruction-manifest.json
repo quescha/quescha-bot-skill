@@ -2,12 +2,12 @@
   "source": "Quescha max generation instructions",
   "files": {
     "genbot_instructions_ru_max.txt": {
-      "bytes": 1060149,
-      "sha256": "f0222ce7a6b876de5dca5e0e5111693dd13d85e37fa9ead5ca3fd911f31052a4"
+      "bytes": 1061183,
+      "sha256": "230a93cc28d8e5aeb4c6c27ab75f078c211fc4ce64e54e9c893d545964b40f93"
     },
     "genbot_instructions_en_max.txt": {
-      "bytes": 720761,
-      "sha256": "c0f07554d225f19cd3bc6d9eb120e99115ccef7e82d23282c76d2e4712ed0cfc"
+      "bytes": 721404,
+      "sha256": "f40fb069adca473464e6fc769eb19d54c2a995c4388bfbefa77393e25449e96b"
     }
   }
 }
